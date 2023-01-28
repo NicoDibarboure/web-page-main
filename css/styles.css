@@ -206,6 +206,7 @@ ul {
 .icons-container {
   display: flex;
   margin-top: -20px;
+  align-items: flex-end;
 }
 
 .icons-container>li {
@@ -229,9 +230,10 @@ ul {
 .icons-container a {
   border-radius: 8px;
   border: 1px solid var(--secondary);
-  padding: 5px 10px;
+  padding: 3px;
+  margin-top: 2rem;
+  margin-left: .46rem;
   transition: all .3s ease;
-
 }
 
 /* About me */
