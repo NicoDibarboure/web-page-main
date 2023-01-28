@@ -18,9 +18,9 @@ const typed = new Typed(".typed", {
 
 // hero-styles
 const likes = [
-  "aprender cosas nuevas",
-  "resolver problemas",
-  "trabajar en equipo",
+  "aprender cosas nuevas.",
+  "resolver problemas.",
+  "trabajar en equipo.",
 ];
 let i = 0;
 

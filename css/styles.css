@@ -209,6 +209,7 @@ ul {
 }
 
 .icons-container>li {
+  display: flex;
   font-size: .8rem;
   color: var(--secondary);
   font-weight: 500;
@@ -216,7 +217,7 @@ ul {
   margin-right: .7rem;
 }
 
-.icons-container>li:hover {
+.icons-container>li>a:hover {
   background-color: var(--secondary);
   color: #fff;
 }
@@ -674,145 +675,148 @@ footer {
 
   .icons-container>li {
     font-size: 1.2rem;
+    display: flex;
   }
 
   .icons-container a {
     padding: 8px 20px;
+    margin: 2rem 0px 0px 0.7rem;
+  }
+}
+
+.icons-container>li>a>i {
+  font-size: 1.2rem;
+}
+
+.skew {
+  height: 900px;
+  transform: skewY(-13deg);
+}
+
+@keyframes skewed {
+  0% {
+    transform: skewY(0deg);
   }
 
-  .icons-container>li>a>i {
-    font-size: 1.2rem;
-  }
-
-  .skew {
-    height: 900px;
+  100% {
     transform: skewY(-13deg);
   }
+}
 
-  @keyframes skewed {
-    0% {
-      transform: skewY(0deg);
-    }
+/* About me */
 
-    100% {
-      transform: skewY(-13deg);
-    }
-  }
+.about-me>h2::after {
+  width: 26%;
+  left: 37%;
+}
 
-  /* About me */
+.about-img-container {
+  width: 42%;
+}
 
-  .about-me>h2::after {
-    width: 26%;
-    left: 37%;
-  }
+.about-text-container {
+  width: 90%;
+  margin: 4rem auto;
+}
 
-  .about-img-container {
-    width: 42%;
-  }
-
-  .about-text-container {
-    width: 90%;
-    margin: 4rem auto;
-  }
-
-  /* Proyectos */
+/* Proyectos */
 
 
-  .proyectos-container {
-    width: 80%;
-  }
+.proyectos-container {
+  width: 80%;
+}
 
-  .proyecto {
-    height: 400px;
-  }
+.proyecto {
+  height: 400px;
+}
 
-  .proyecto-back>p {
-    font-size: 1.2rem;
-  }
+.proyecto-back>p {
+  font-size: 1.2rem;
+}
 
-  .proyecto-links {
-    margin-top: 2rem;
-  }
+.proyecto-links {
+  margin-top: 2rem;
+}
 
-  .proyecto-links a {
-    font-size: 2.5rem;
-  }
+.proyecto-links a {
+  font-size: 2.5rem;
+}
 
-  .proyecto-content {
-    margin-top: 1rem;
-  }
+.proyecto-content {
+  margin-top: 1rem;
+}
 
-  .proyecto-content>h2 {
-    font-size: 1.4rem;
-  }
+.proyecto-content>h2 {
+  font-size: 1.4rem;
+}
 
-  .proyecto-habilities>li {
-    font-size: 1rem;
-  }
+.proyecto-habilities>li {
+  font-size: 1rem;
+}
 
-  /* Habilidades */
+/* Habilidades */
 
-  .proyectos>h2::after {
-    left: 33%;
-    width: 34%;
-  }
+.proyectos>h2::after {
+  left: 33%;
+  width: 34%;
+}
 
-  .habilidades>h2::after {
-    width: 34%;
-    left: 33%;
-  }
+.habilidades>h2::after {
+  width: 34%;
+  left: 33%;
+}
 
-  .habilidades-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.habilidades-container {
+  grid-template-columns: repeat(4, 1fr);
+}
 
-  /* Contacto */
+/* Contacto */
 
-  .contacto>h2::after {
-    width: 30%;
-    left: 35%;
-  }
+.contacto>h2::after {
+  width: 30%;
+  left: 35%;
+}
 
-  .contacto-container {
-    width: 80%;
-  }
+.contacto-container {
+  width: 80%;
+}
 
-  .contacto-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.contacto-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .contacto-icons a {
-    margin-top: 2rem;
-    width: 47%;
-    padding: 1.5rem;
-  }
+.contacto-icons a {
+  margin-top: 2rem;
+  width: 47%;
+  padding: 1.5rem;
+}
 
-  .contacto-icons a div i {
-    font-size: 2.8rem;
-  }
+.contacto-icons a div i {
+  font-size: 2.8rem;
+}
 
-  .contacto-icons a div p {
-    margin-top: .8rem;
-    font-size: 1.5rem;
-  }
+.contacto-icons a div p {
+  margin-top: .8rem;
+  font-size: 1.5rem;
+}
 
-  /* Footer */
+/* Footer */
 
-  footer {
-    width: 100%;
-    background-color: var(--background);
-    z-index: -2;
-  }
+footer {
+  width: 100%;
+  background-color: var(--background);
+  z-index: -2;
+}
 
-  .footer-container {
-    padding: 1rem;
-  }
+.footer-container {
+  padding: 1rem;
+}
 
-  .footer-container p {
-    font-size: 1rem;
-  }
+.footer-container p {
+  font-size: 1rem;
+}
 
 }
 
@@ -1159,7 +1163,7 @@ footer {
     padding-left: 4rem;
   }
 
-  .icons-container>li:hover {
+  .icons-container>li>a:hover {
     background-color: var(--secondary);
     color: #fff;
   }
