@@ -1,10 +1,10 @@
 :root {
-  --primary: #0099ff;
-  --secondary: #0059ff;
-  --background: #004776;
+  --primary: #f867a1;
+  --secondary: #f867a1;
+  --background: #f867a1;
   --dark: #0a0a0a;
   --light: #f0f0f0;
-  --text: #413737e6;
+  --text: #0a0a0a;
   --new: #f867a1;
 }
 
@@ -819,8 +819,6 @@ footer {
 
 .footer-container p {
   font-size: 1rem;
-}
-
 }
 
 @media (min-width: 769px) {
