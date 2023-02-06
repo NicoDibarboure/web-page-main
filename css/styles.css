@@ -722,6 +722,10 @@ footer {
   margin: 4rem auto;
 }
 
+.about-text-container p {
+  font-size: 1.20em;
+}
+
 /* Proyectos */
 
 
@@ -791,13 +795,14 @@ footer {
 }
 
 .contacto-icons a {
-  margin-top: 2rem;
-  width: 47%;
+  margin-top: 3rem;
+  width: 48%;
   padding: 1.5rem;
+  border: 3px solid var(--new);
 }
 
 .contacto-icons a div i {
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 
 .contacto-icons a div p {
