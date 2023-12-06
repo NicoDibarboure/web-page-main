@@ -1,339 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale= 1.0"
+    />
+    <link
+      rel="icon"
+      href="https://media.istockphoto.com/id/1362926849/es/vector/s%C3%ADmbolo-qu%C3%ADmico-de-neodimio-marco-cuadrado-elemento-de-tabla-mendeleev-fondo-rosa.jpg?b=1&s=170x170&k=20&c=UCgo2GiJpbOPP9t1IISfj54iJ4_4i3ZmyfxK1jCRdhY="
+    />
+    <title>Nicolás Dibarboure | Frontend Developer</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/23192939c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale= 1.0">
-  <link rel="icon"
-    href="https://media.istockphoto.com/id/1362926849/es/vector/s%C3%ADmbolo-qu%C3%ADmico-de-neodimio-marco-cuadrado-elemento-de-tabla-mendeleev-fondo-rosa.jpg?b=1&s=170x170&k=20&c=UCgo2GiJpbOPP9t1IISfj54iJ4_4i3ZmyfxK1jCRdhY=">
-  <title>Nicolás Dibarboure | Frontend Developer</title>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/23192939c8.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <div id="particles-js" class="animation"></div>
 
-<body>
-  <div id="particles-js" class="animation"></div>
+    <!-- Header -->
+    <header id="header" class="header">
+      <!-- Mobile -->
+      <div class="menu-mobile">
+        <div>
+          <a id="btnMenu"><i class="fas fa-bars"></i></a>
+        </div>
 
-  <!-- Header -->
-  <header id="header" class="header">
-    <!-- Mobile -->
-    <div class="menu-mobile">
-      <div>
-        <a id="btnMenu"><i class="fas fa-bars"></i></a>
+        <nav class="menu-side">
+          <a id="start-menu" href="#inicio">Inicio</a>
+          <a id="about-me-menu" href="#sobre-mi">Sobre mi</a>
+          <a id="proyects-menu" href="#proyectos">Proyectos</a>
+          <a id="hability-menu" href="#habilidades">Habilidades</a>
+          <a id="contact-menu" href="#contacto">Contacto</a>
+        </nav>
       </div>
 
-      <nav class="menu-side">
-        <a id="start-menu" href="#inicio">Inicio</a>
-        <a id="about-me-menu" href="#sobre-mi">Sobre mi</a>
-        <a id="proyects-menu" href="#proyectos">Proyectos</a>
-        <a id="hability-menu" href="#habilidades">Habilidades</a>
-        <a id="contact-menu" href="#contacto">Contacto</a>
-      </nav>
-    </div>
+      <!-- Escritorio - fijo -->
+      <div id="fixed-header" class="header-fixed">
+        <ul>
+          <li><a class="start" href="#inicio">Inicio</a></li>
+          <li><a class="aboutMe" href="#sobre-mi">Sobre mi</a></li>
+          <li><a class="proyects" href="#proyectos">Proyectos</a></li>
+          <li><a class="hability" href="#habilidades">Habilidades</a></li>
+          <li><a class="contact" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
 
-    <!-- Escritorio - fijo -->
-    <div id="fixed-header" class="header-fixed">
-      <ul>
+      <!-- Escritorio -->
+      <ul id="header-container" class="header-container">
         <li><a class="start" href="#inicio">Inicio</a></li>
         <li><a class="aboutMe" href="#sobre-mi">Sobre mi</a></li>
         <li><a class="proyects" href="#proyectos">Proyectos</a></li>
         <li><a class="hability" href="#habilidades">Habilidades</a></li>
         <li><a class="contact" href="#contacto">Contacto</a></li>
       </ul>
-    </div>
-
-    <!-- Escritorio -->
-    <ul id="header-container" class="header-container">
-      <li><a class="start" href="#inicio">Inicio</a></li>
-      <li><a class="aboutMe" href="#sobre-mi">Sobre mi</a></li>
-      <li><a class="proyects" href="#proyectos">Proyectos</a></li>
-      <li><a class="hability" href="#habilidades">Habilidades</a></li>
-      <li><a class="contact" href="#contacto">Contacto</a></li>
-    </ul>
-
-  </header>
-  <!-- Hero -->
-  <section id="inicio" class="hero">
-    <div class="hero-container">
-      <h6>&#160;<span class="typed"></span></h6>
-      <h1>Soy Nicolás Dibarboure,
-        <span class="hero-span">Junior Front End Developer</span> y me gusta
-        <span class="hero-styles" id="likes"></span>
-      </h1>
-    </div>
-    <div>
-      <div class="skew"></div>
-    </div>
-    <ul class="icons-container">
-      <li><a href="./recursos/CV Nicolas Dibarboure - Estudiante de Programacion.pdf"
-          download="CV - Nicolás Dibarboure">Resume <i class="fas fa-file-export"></i></a></li>
-      <li><a href="https://github.com/NicoDibarboure" target="_blank">Github <i class="fab fa-github-square"></i></a>
-      </li>
-
-      <li><a href="https://www.linkedin.com/in/dibarbourenico/" target="_blank">LinkedIn <i
-            class="fab fa-linkedin"></i></a></li>
-    </ul>
-
-  </section>
-  <!-- Sobre mi -->
-  <section id="sobre-mi" class="about-me">
-    <h2>Sobre Mi</h2>
-    <div class="about-me-container">
-      <div class="about-img-container">
-        <img src="recursos/foto-portfolio.jpg" alt="foto-perfil" />
+    </header>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="hero-container">
+        <h6>&#160;<span class="typed"></span></h6>
+        <h1>
+          Soy Nicolás Dibarboure,
+          <span class="hero-span">Junior Front End Developer</span> y me gusta
+          <span class="hero-styles" id="likes"></span>
+        </h1>
       </div>
-      <div class="about-text-container">
+      <div>
+        <div class="skew"></div>
+      </div>
+      <ul class="icons-container">
+        <li>
+          <a
+            href="./recursos/CV Nicolas Dibarboure - Estudiante de Programacion.pdf"
+            download="CV - Nicolás Dibarboure"
+            >Resume <i class="fas fa-file-export"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/NicoDibarboure" target="_blank"
+            >Github <i class="fab fa-github-square"></i
+          ></a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/dibarbourenico/" target="_blank"
+            >LinkedIn <i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="about-me">
+      <h2>Sobre Mi</h2>
+      <div class="about-me-container">
+        <div class="about-img-container">
+          <img src="recursos/foto-portfolio.jpg" alt="foto-perfil" />
+        </div>
+        <div class="about-text-container">
+          <p>
+            Mi nombre es Nicolas Alberto Dibarboure. Como muchos, me sentí
+            atraido por el mundo de la programación y me propuse como meta
+            aprender de manera autodidacta, por tanto busqué recursos en
+            internet de forma libre y gratuita y comencé mi ruta de estudios.
+            Así descubrí el desarrollo Front End.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+      <h2>Proyectos</h2>
+      <div class="proyectos-container">
+        <article data-aos="zoom-in" class="proyecto">
+          <div class="proyecto-img-container">
+            <img src="recursos/Clash.png" alt="Clash Wiki" />
+          </div>
+          <div class="proyecto-description">
+            <div class="proyecto-back">
+              <p>
+                <span>RoyaleWiki</span> Es un proyecto de Wiki relacionada al
+                mundo del Clash Royale, al ser un proyecto inicial todavia le
+                falta el desarrollo pero tiene mucho potencial.
+              </p>
+              <div class="proyecto-links">
+                <a
+                  href="https://github.com/NicoDibarboure/new-website-clash"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://nicodibarboure.github.io/new-website-clash/#"
+                  target="_blank"
+                  ><i class="fas fa-desktop"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-content">
+            <h2>RoyaleWiki</h2>
+            <ul class="proyecto-habilities">
+              <li>Html</li>
+              <li>Css</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+        </article>
+
+        <article data-aos="zoom-in" class="proyecto">
+          <div class="proyecto-img-container">
+            <img src="recursos/codea-ya.PNG" alt="Codea Ya" />
+          </div>
+          <div class="proyecto-description">
+            <div class="proyecto-back">
+              <p>
+                <span>Codea Ya!</span> Es una pagina web que hace la referencia
+                a PedidosYa! Pero la principal funcion seria el estudio de
+                distintos tipos de lenguajes de programacion.
+              </p>
+              <div class="proyecto-links">
+                <a
+                  href="https://github.com/NicoDibarboure/PreEntrega2-Dibarboure"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://nicodibarboure.github.io/PreEntrega2-Dibarboure/"
+                  target="_blank"
+                  ><i class="fas fa-desktop"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-content">
+            <h2>Codea Ya!</h2>
+            <ul class="proyecto-habilities">
+              <li>Html</li>
+              <li>Css</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+        </article>
+        <article data-aos="zoom-in" class="proyecto">
+          <div class="proyecto-img-container">
+            <img
+              src="https://imagenes-pages.s3-sa-east-1.amazonaws.com/Profile-cards.png"
+              alt="Tarjeta-de-presentacion"
+            />
+          </div>
+          <div class="proyecto-description">
+            <div class="proyecto-back">
+              <p>
+                <span>Profile cards</span> es una pagina web que muestra un
+                diseño de tarjetas de presentacion de forma creativa que puedes
+                tomar como referencia para futuras creaciones.
+              </p>
+              <div class="proyecto-links">
+                <a
+                  href="https://github.com/NicoDibarboure/Tarjetas-de-presentacion"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://nicodibarboure.github.io/Tarjetas-de-presentacion/"
+                  target="_blank"
+                  ><i class="fas fa-desktop"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-content">
+            <h2>Profile cards</h2>
+            <ul class="proyecto-habilities">
+              <li>Html</li>
+              <li>Css</li>
+            </ul>
+          </div>
+        </article>
+        <article data-aos="zoom-in" class="proyecto">
+          <div class="proyecto-img-container">
+            <img
+              src="https://imagenes-pages.s3-sa-east-1.amazonaws.com/Cube.png"
+              alt="Slice Cube"
+            />
+          </div>
+          <div class="proyecto-description">
+            <div class="proyecto-back">
+              <p>
+                <span>Slice cube</span> es una pagina web donde se muestra un
+                cubo en forma de imagen. Cada imagen esta dividida en 3 partes
+                iguales y el cubo tiene una pequeña animacion entre cada imagen.
+              </p>
+              <div class="proyecto-links">
+                <a
+                  href="https://github.com/NicoDibarboure/Slice-Image-Cube-main"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://nicodibarboure.github.io/Slice-Image-Cube-main/"
+                  target="_blank"
+                  ><i class="fas fa-desktop"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-content">
+            <h2>Slice cube</h2>
+            <ul class="proyecto-habilities">
+              <li>Html</li>
+              <li>Css</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+        </article>
+        <article data-aos="zoom-in" class="proyecto">
+          <div class="proyecto-img-container">
+            <img src="recursos/front-end-store.PNG" alt="Front End Store" />
+          </div>
+          <div class="proyecto-description">
+            <div class="proyecto-back">
+              <p>
+                <span>Front End Store</span> es una pagina web que funciona como
+                un Marketplace.
+              </p>
+              <div class="proyecto-links">
+                <a
+                  href="https://github.com/NicoDibarboure/Front-End-Store"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://nicodibarboure.github.io/Front-End-Store/"
+                  target="_blank"
+                  ><i class="fas fa-desktop"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-content">
+            <h2>Front End Store</h2>
+            <ul class="proyecto-habilities">
+              <li>Html</li>
+              <li>Javascript</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </article>
+        <article data-aos="zoom-in" class="proyecto">
+          <div class="proyecto-img-container">
+            <img src="recursos/festival-page.PNG" alt="Festival Page" />
+          </div>
+          <div class="proyecto-description">
+            <div class="proyecto-back">
+              <p>
+                <span>Festival Page</span> es un buscador un sitio web donde
+                muestra el lineup de artistas, una galeria de fotos del festival
+                y por ultimo tiene la venta de boletos separado por combos.
+              </p>
+              <div class="proyecto-links">
+                <a
+                  href="https://github.com/NicoDibarboure/FestivalMusica"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://nicodibarboure.github.io/FestivalMusica/"
+                  target="_blank"
+                  ><i class="fas fa-desktop"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-content">
+            <h2>Festival Page</h2>
+            <ul class="proyecto-habilities">
+              <li>Html</li>
+              <li>Javascript</li>
+              <li>SASS</li>
+              <li>Gulp</li>
+            </ul>
+          </div>
+        </article>
+        <div class="skew-proyects"></div>
+        <article data-aos="zoom-in" class="proyecto">
+          <div class="proyecto-img-container">
+            <img src="recursos/blog-de-cafe.PNG" alt="Blog de Café" />
+          </div>
+          <div class="proyecto-description">
+            <div class="proyecto-back">
+              <p>
+                <span>Blog de Café</span> es un sitio web donde aprenderas
+                recetas y consejos de los expertos del cafe.
+              </p>
+              <div class="proyecto-links">
+                <a
+                  href="https://github.com/NicoDibarboure/blogdecafe"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://nicodibarboure.github.io/blogdecafe/"
+                  target="_blank"
+                  ><i class="fas fa-desktop"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-content">
+            <h2>Blog de Café</h2>
+            <ul class="proyecto-habilities">
+              <li>Html</li>
+              <li>Css</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades">
+      <h2>Habilidades</h2>
+      <div class="habilidades-container">
+        <div data-aos="fade-up" data-aos-duration="300" class="technologies">
+          <div class="technologies-image">
+            <img
+              src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/html.svg"
+              alt="Html5"
+            />
+          </div>
+          <h4>Html5</h4>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600" class="technologies">
+          <div class="technologies-image">
+            <img
+              src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/css.svg"
+              alt="Css"
+            />
+          </div>
+          <h4>Css</h4>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="900" class="technologies">
+          <div class="technologies-image">
+            <img
+              src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/javascript.svg"
+              alt="Javascript"
+            />
+          </div>
+          <h4>Javascript</h4>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1200" class="technologies">
+          <div class="technologies-image sass">
+            <img
+              src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/sass.svg"
+              alt="Sass"
+            />
+          </div>
+          <h4>Sass</h4>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500" class="technologies">
+          <div class="technologies-image">
+            <img
+              src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/git.svg"
+              alt="Git"
+            />
+          </div>
+          <h4>Git</h4>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1800" class="technologies">
+          <div class="technologies-image">
+            <img
+              src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/github.svg"
+              alt="Github"
+            />
+          </div>
+          <h4>Github</h4>
+        </div>
+      </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <div class="contacto-container">
         <p>
-          Mi nombre es Nicolas Alberto Dibarboure. Como muchos, me sentí atraido por el mundo de la
-          programación y me propuse como meta aprender de manera autodidacta, por tanto busqué recursos en internet de
-          forma libre y gratuita y comencé mi ruta de estudios. Así descubrí el desarrollo Front End.
+          Estoy siempre abierto a aprender, además estoy buscando mi primera
+          oportunidad como desarrollador Front End! Si crees que mi perfil se
+          adecua con lo que buscas, ¡no dudes en contactarme!
         </p>
-      </div>
-    </div>
-  </section>
-  <!-- Proyectos -->
-  <section id="proyectos" class="proyectos">
-    <h2>Proyectos</h2>
-    <div class="proyectos-container">
-      <article data-aos="zoom-in" class="proyecto">
-        <div class="proyecto-img-container">
-          <img src="recursos/codea-ya.PNG" alt="Codea Ya" />
-        </div>
-        <div class="proyecto-description">
-          <div class="proyecto-back">
-            <p>
-              <span>Codea Ya!</span> Es una pagina web que hace la referencia a PedidosYa! Pero la principal funcion
-              seria el estudio de distintos tipos de lenguajes de programacion.
-            </p>
-            <div class="proyecto-links">
-              <a href="https://github.com/NicoDibarboure/PreEntrega2-Dibarboure" target="_blank"><i
-                  class="fab fa-github"></i></a>
-              <a href="https://nicodibarboure.github.io/PreEntrega2-Dibarboure/" target="_blank"><i
-                  class="fas fa-desktop"></i></a>
+        <div class="contacto-icons">
+          <a href="mailto:nico.dibarboure@gmail.com">
+            <div>
+              <i class="fas fa-envelope"></i>
+              <p>Email</p>
             </div>
-          </div>
-        </div>
-        <div class="proyecto-content">
-          <h2>Codea Ya!</h2>
-          <ul class="proyecto-habilities">
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-          </ul>
-        </div>
-      </article>
-      <article data-aos="zoom-in" class="proyecto">
-        <div class="proyecto-img-container">
-          <img src="https://imagenes-pages.s3-sa-east-1.amazonaws.com/Profile-cards.png"
-            alt="Tarjeta-de-presentacion" />
-        </div>
-        <div class="proyecto-description">
-          <div class="proyecto-back">
-            <p>
-              <span>Profile cards</span> es una pagina web que muestra un diseño de tarjetas de presentacion de forma
-              creativa que puedes tomar como referencia para futuras creaciones.
-            </p>
-            <div class="proyecto-links">
-              <a href="https://github.com/NicoDibarboure/Tarjetas-de-presentacion" target="_blank"><i
-                  class="fab fa-github"></i></a>
-              <a href="https://nicodibarboure.github.io/Tarjetas-de-presentacion/" target="_blank"><i
-                  class="fas fa-desktop"></i></a>
+          </a>
+          <a href="https://www.linkedin.com/in/dibarbourenico/" target="_blank">
+            <div>
+              <i class="fab fa-linkedin"></i>
+              <p>LinkedIn</p>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="proyecto-content">
-          <h2>Profile cards</h2>
-          <ul class="proyecto-habilities">
-            <li>Html</li>
-            <li>Css</li>
-          </ul>
-        </div>
-      </article>
-      <article data-aos="zoom-in" class="proyecto">
-        <div class="proyecto-img-container">
-          <img src="https://imagenes-pages.s3-sa-east-1.amazonaws.com/Cube.png" alt="Slice Cube" />
-        </div>
-        <div class="proyecto-description">
-          <div class="proyecto-back">
-            <p>
-              <span>Slice cube</span> es una pagina web donde se muestra un cubo en forma de imagen. Cada imagen esta
-              dividida en 3 partes iguales y el cubo tiene una pequeña animacion entre cada imagen.
-            </p>
-            <div class="proyecto-links">
-              <a href="https://github.com/NicoDibarboure/Slice-Image-Cube-main" target="_blank"><i
-                  class="fab fa-github"></i></a>
-              <a href="https://nicodibarboure.github.io/Slice-Image-Cube-main/" target="_blank"><i
-                  class="fas fa-desktop"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="proyecto-content">
-          <h2>Slice cube</h2>
-          <ul class="proyecto-habilities">
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-          </ul>
-        </div>
-      </article>
-      <article data-aos="zoom-in" class="proyecto">
-        <div class="proyecto-img-container">
-          <img src="recursos/front-end-store.PNG" alt="Front End Store" />
-        </div>
-        <div class="proyecto-description">
-          <div class="proyecto-back">
-            <p>
-              <span>Front End Store</span> es una pagina web que funciona como un Marketplace.
-            </p>
-            <div class="proyecto-links">
-              <a href="https://github.com/NicoDibarboure/Front-End-Store" target="_blank"><i
-                  class="fab fa-github"></i></a>
-              <a href="https://nicodibarboure.github.io/Front-End-Store/" target="_blank"><i
-                  class="fas fa-desktop"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="proyecto-content">
-          <h2>Front End Store</h2>
-          <ul class="proyecto-habilities">
-            <li>Html</li>
-            <li>Javascript</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-      </article>
-      <article data-aos="zoom-in" class="proyecto">
-        <div class="proyecto-img-container">
-          <img src="recursos/festival-page.PNG" alt="Festival Page" />
-        </div>
-        <div class="proyecto-description">
-          <div class="proyecto-back">
-            <p>
-              <span>Festival Page</span> es un buscador un sitio web donde muestra el lineup de artistas, una galeria de
-              fotos del festival y por ultimo tiene la venta de boletos separado por combos.
-            </p>
-            <div class="proyecto-links">
-              <a href="https://github.com/NicoDibarboure/FestivalMusica" target="_blank"><i
-                  class="fab fa-github"></i></a>
-              <a href="https://nicodibarboure.github.io/FestivalMusica/" target="_blank"><i
-                  class="fas fa-desktop"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="proyecto-content">
-          <h2>Festival Page</h2>
-          <ul class="proyecto-habilities">
-            <li>Html</li>
-            <li>Javascript</li>
-            <li>SASS</li>
-            <li>Gulp</li>
-          </ul>
-        </div>
-      </article>
-      <div class="skew-proyects"></div>
-      <article data-aos="zoom-in" class="proyecto">
-        <div class="proyecto-img-container">
-          <img src="recursos/blog-de-cafe.PNG" alt="Blog de Café" />
-        </div>
-        <div class="proyecto-description">
-          <div class="proyecto-back">
-            <p>
-              <span>Blog de Café</span> es un sitio web donde aprenderas recetas y consejos de los expertos del cafe.
-            </p>
-            <div class="proyecto-links">
-              <a href="https://github.com/NicoDibarboure/blogdecafe" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://nicodibarboure.github.io/blogdecafe/" target="_blank"><i class="fas fa-desktop"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="proyecto-content">
-          <h2>Blog de Café</h2>
-          <ul class="proyecto-habilities">
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
-  <!-- Habilidades -->
-  <section id="habilidades" class="habilidades">
-    <h2>Habilidades</h2>
-    <div class="habilidades-container">
-      <div data-aos="fade-up" data-aos-duration="300" class="technologies">
-        <div class="technologies-image">
-          <img src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/html.svg" alt="Html5">
-        </div>
-        <h4>Html5</h4>
       </div>
-      <div data-aos="fade-up" data-aos-duration="600" class="technologies">
-        <div class="technologies-image">
-          <img src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/css.svg" alt="Css">
-        </div>
-        <h4>Css</h4>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <p>Copyright Nicolás | <span id="year"></span></p>
       </div>
-      <div data-aos="fade-up" data-aos-duration="900" class="technologies">
-        <div class="technologies-image">
-          <img src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/javascript.svg" alt="Javascript">
-        </div>
-        <h4>Javascript</h4>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="1200" class="technologies">
-        <div class="technologies-image sass">
-          <img src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/sass.svg" alt="Sass">
-        </div>
-        <h4>Sass</h4>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="1500" class="technologies">
-        <div class="technologies-image">
-          <img src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/git.svg" alt="Git">
-        </div>
-        <h4>Git</h4>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="1800" class="technologies">
-        <div class="technologies-image">
-          <img src="https://icons-svgs.s3-sa-east-1.amazonaws.com/images/github.svg" alt="Github">
-        </div>
-        <h4>Github</h4>
-      </div>
-    </div>
-  </section>
-  <!-- Contacto -->
-  <section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <div class="contacto-container">
-      <p>Estoy siempre abierto a aprender, además estoy buscando mi primera oportunidad como desarrollador Front End! Si
-        crees que mi perfil se adecua con lo que buscas, ¡no dudes en contactarme!</p>
-      <div class="contacto-icons">
-        <a href="mailto:nico.dibarboure@gmail.com">
-          <div>
-            <i class="fas fa-envelope"></i>
-            <p>Email</p>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/dibarbourenico/" target="_blank">
-          <div>
-            <i class="fab fa-linkedin"></i>
-            <p>LinkedIn</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <p>Copyright Nicolás | <span id="year"></span></p>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="./js/app.js"></script>
-</body>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
