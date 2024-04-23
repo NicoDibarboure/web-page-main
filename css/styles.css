@@ -354,6 +354,7 @@ ul {
   top: 0;
   left: 0;
   height: 75%;
+  width: 100%;
   transition: all 1s ease;
 }
 
